@@ -3,6 +3,9 @@
 
 
 int main() {
-    Array<int> arr();
+    Array<int, 5> arr;
+    std::cout << arr[0] << '\n';
+    std::cout << arr.front() << '\n';
+    std::cout << arr.back() << '\n';  
     return 0;
 }

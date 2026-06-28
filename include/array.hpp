@@ -1,12 +1,29 @@
 #include <iostream>
 
-template<typename T>
+template<typename T, int L>
 class Array
 {
     private:
-        T* data;
-        size_t size;
+        T data[L];
 
     public:
-        Array();
+        // index operator
+        T& operator[](int index) {
+            return data[index];
+        }
+
+        int front() {
+            return data[0];
+        }
+
+        int back() {
+            return data[L];
+        }
+
+        
+
+        // get size
+        int size() {
+            return L;
+        }
 };
