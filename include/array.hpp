@@ -1,7 +1,9 @@
-#include <iostream>
+#pragma once
+
+namespace ds {
 
 template<typename T, int L>
-class Array
+class array
 {
     private:
         T data[L];
@@ -20,10 +22,12 @@ class Array
             return data[L];
         }
 
-        
+
 
         // get size
         int size() {
             return L;
         }
 };
+
+}
